@@ -84,15 +84,17 @@
                 // YOU CAN EDIT THIS IN THE BEGINNING
                 function getVelocity(h,range){
                 //Complete this
-
-                    return 600;
+                    // u=sqrt[(distance*2*g)/sin2a]     
+                
+                    return squareRoot((range*2*1000)/(sin(2*tanInv((2*h)/range))));
                 }
 
                 // YOU CAN EDIT THIS IN THE BEGINNING
                 function getAngle(h,range){
                 //Complete this
-
-                    return 45;
+                    //tan a = (2*h)/range ;
+                    // *h/35 real world coeff.* 
+                    return tanInv((2*h)/range - h/35;
                 }
 
                 // THE VARIABLES ARE UPDATED ACCORDING TO THE LEVEL
